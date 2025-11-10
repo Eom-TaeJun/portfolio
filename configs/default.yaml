@@ -1,0 +1,29 @@
+diff --git a/configs/default.yaml b/configs/default.yaml
+new file mode 100644
+index 0000000000000000000000000000000000000000..c676dc5612c6f81cb37c0ce0fdc7624409836870
+--- /dev/null
++++ b/configs/default.yaml
+@@ -0,0 +1,23 @@
++environment:
++  name: synthetic_constrained_env
++  state_dim: 32
++  action_dim: 8
++  constraint_dim: 4
++  horizon: 16
++
++model:
++  d_model: 64
++  nhead: 4
++  num_encoder_layers: 2
++  num_decoder_layers: 2
++  dim_feedforward: 128
++  dropout: 0.1
++
++training:
++  total_steps: 100
++  batch_size: 32
++  gamma: 0.99
++  learning_rate: 0.0003
++  grad_clip_norm: 1.0
++  value_coef: 0.5
++  entropy_coef: 0.01

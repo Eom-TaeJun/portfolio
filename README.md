@@ -21,5 +21,3 @@ python -m src.main --config configs/default.yaml --device cpu
 ```
 
 기본 환경은 무작위로 생성되는 상태와 제약 페널티를 사용한 단순한 예제입니다. 실제 문제에 맞게 `OptimizationEnvironment` 클래스를 상속하여 환경 로직을 확장할 수 있습니다. `training` 설정에는 `value_coef`와 `entropy_coef`가 포함되어 있어 가치 함수 손실 가중치와 탐색을 위한 엔트로피 보너스를 조정할 수 있습니다.
-
-
