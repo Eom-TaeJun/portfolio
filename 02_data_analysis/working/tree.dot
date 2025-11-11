@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="CPILFESL <= 297.98\nsquared_error = 3.38\nsamples = 45\nvalue = 2.09", fillcolor="#f5ceb2"] ;
+1 [label="SOFR <= 0.91\nsquared_error = 0.96\nsamples = 34\nvalue = 1.16", fillcolor="#fae5d6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="UNRATE <= 3.65\nsquared_error = 0.05\nsamples = 16\nvalue = 0.17", fillcolor="#fffdfc"] ;
+1 -> 2 ;
+3 [label="squared_error = 0.0\nsamples = 1\nvalue = 0.77", fillcolor="#fceee5"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.0\nsamples = 15\nvalue = 0.09", fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label="DFEDTARU <= 2.12\nsquared_error = 0.09\nsamples = 18\nvalue = 2.06", fillcolor="#f5cfb3"] ;
+1 -> 5 ;
+6 [label="squared_error = 0.01\nsamples = 8\nvalue = 1.73", fillcolor="#f7d7c0"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.02\nsamples = 10\nvalue = 2.29", fillcolor="#f4c9aa"] ;
+5 -> 7 ;
+8 [label="PCEPI <= 118.98\nsquared_error = 0.44\nsamples = 11\nvalue = 4.81", fillcolor="#e78c4a"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="DCOILWTICO <= 80.49\nsquared_error = 0.14\nsamples = 3\nvalue = 3.68", fillcolor="#eda775"] ;
+8 -> 9 ;
+10 [label="squared_error = 0.0\nsamples = 1\nvalue = 3.08", fillcolor="#f0b68c"] ;
+9 -> 10 ;
+11 [label="squared_error = 0.02\nsamples = 2\nvalue = 3.89", fillcolor="#eca26d"] ;
+9 -> 11 ;
+12 [label="CPIAUCSL <= 303.48\nsquared_error = 0.06\nsamples = 8\nvalue = 5.13", fillcolor="#e6843d"] ;
+8 -> 12 ;
+13 [label="squared_error = 0.01\nsamples = 2\nvalue = 4.71", fillcolor="#e88e4d"] ;
+12 -> 13 ;
+14 [label="squared_error = 0.01\nsamples = 6\nvalue = 5.24", fillcolor="#e58139"] ;
+12 -> 14 ;
+}

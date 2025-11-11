@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6258fb5d1b569238d1ddbd4a248cb584 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6258fb5d1b569238d1ddbd4a248cb584" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6258fb5d1b569238d1ddbd4a248cb584 = L.map(
+                "map_6258fb5d1b569238d1ddbd4a248cb584",
+                {
+                    center: [35.999224296586284, 128.60543320804427],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6afbc93958c2e646cc395574512fda0e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6afbc93958c2e646cc395574512fda0e.addTo(map_6258fb5d1b569238d1ddbd4a248cb584);
+        
+    
+            var marker_66d6c1f8390315ca26197866826f5cbf = L.marker(
+                [35.999224296586284, 128.60543320804427],
+                {}
+            ).addTo(map_6258fb5d1b569238d1ddbd4a248cb584);
+        
+    
+            var icon_734d809d3b42e95fa31800d23f85e13b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_66d6c1f8390315ca26197866826f5cbf.setIcon(icon_734d809d3b42e95fa31800d23f85e13b);
+        
+    
+        var popup_da515c6584136e41b31bd486db61ac15 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ad146a77352d13651ca71c7ce7f7735 = $(`<div id="html_1ad146a77352d13651ca71c7ce7f7735" style="width: 100.0%; height: 100.0%;">             <div style='font-size: 14px'>                 <b>[기준 알뜰주유소]</b><br>                 <b>오성주유소</b><br>                 주소: 경북 칠곡군 동명면 팔공산로 152             </div>         </div>`)[0];
+                popup_da515c6584136e41b31bd486db61ac15.setContent(html_1ad146a77352d13651ca71c7ce7f7735);
+            
+        
+
+        marker_66d6c1f8390315ca26197866826f5cbf.bindPopup(popup_da515c6584136e41b31bd486db61ac15)
+        ;
+
+        
+    
+    
+            marker_66d6c1f8390315ca26197866826f5cbf.bindTooltip(
+                `<div>
+                     [기준] 오성주유소
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5803eaee9655a2d1c0de062f61213956 = L.circle(
+                [35.999224296586284, 128.60543320804427],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1600, "stroke": true, "weight": 3}
+            ).addTo(map_6258fb5d1b569238d1ddbd4a248cb584);
+        
+    
+        var popup_f4667672532372a6478667b9e8489926 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f33f84d88a7b979c3a94896a41bef42 = $(`<div id="html_3f33f84d88a7b979c3a94896a41bef42" style="width: 100.0%; height: 100.0%;">1마일 반경</div>`)[0];
+                popup_f4667672532372a6478667b9e8489926.setContent(html_3f33f84d88a7b979c3a94896a41bef42);
+            
+        
+
+        circle_5803eaee9655a2d1c0de062f61213956.bindPopup(popup_f4667672532372a6478667b9e8489926)
+        ;
+
+        
+    
+    
+            var circle_b304e3975eb647e1fcf7104132501f17 = L.circle(
+                [35.999224296586284, 128.60543320804427],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3200, "stroke": true, "weight": 3}
+            ).addTo(map_6258fb5d1b569238d1ddbd4a248cb584);
+        
+    
+        var popup_480415caf36bb9d12237939e8b71b05a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0bb0f2f8bd9acf42e3e1e8315724945 = $(`<div id="html_a0bb0f2f8bd9acf42e3e1e8315724945" style="width: 100.0%; height: 100.0%;">2마일 반경</div>`)[0];
+                popup_480415caf36bb9d12237939e8b71b05a.setContent(html_a0bb0f2f8bd9acf42e3e1e8315724945);
+            
+        
+
+        circle_b304e3975eb647e1fcf7104132501f17.bindPopup(popup_480415caf36bb9d12237939e8b71b05a)
+        ;
+
+        
+    
+    
+            var marker_898bf5952b7d0d7c46d7a07814ae2f95 = L.marker(
+                [35.999224296586284, 128.60543320804427],
+                {}
+            ).addTo(map_6258fb5d1b569238d1ddbd4a248cb584);
+        
+    
+            var icon_9a458e41e4bc9657750393e8b9c46826 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_898bf5952b7d0d7c46d7a07814ae2f95.setIcon(icon_9a458e41e4bc9657750393e8b9c46826);
+        
+    
+        var popup_ddb2db21b6fcde0e5dde9738d10bd756 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_285bcf20a410394ba6df32dc9c4e5ec9 = $(`<div id="html_285bcf20a410394ba6df32dc9c4e5ec9" style="width: 100.0%; height: 100.0%;">                         <div style='font-size: 12px'>                             <b>오성주유소</b><br>                             주소: 주소 없음<br>                             가격: 1572원                         </div>                     </div>`)[0];
+                popup_ddb2db21b6fcde0e5dde9738d10bd756.setContent(html_285bcf20a410394ba6df32dc9c4e5ec9);
+            
+        
+
+        marker_898bf5952b7d0d7c46d7a07814ae2f95.bindPopup(popup_ddb2db21b6fcde0e5dde9738d10bd756)
+        ;
+
+        
+    
+    
+            marker_898bf5952b7d0d7c46d7a07814ae2f95.bindTooltip(
+                `<div>
+                     오성주유소 (1572원)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e20ba7829ea17bde40c0d3a1e5f633ae = L.marker(
+                [35.99150368979021, 128.6163916345548],
+                {}
+            ).addTo(map_6258fb5d1b569238d1ddbd4a248cb584);
+        
+    
+            var icon_39e301782b600e42a9a8dda76734ff7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e20ba7829ea17bde40c0d3a1e5f633ae.setIcon(icon_39e301782b600e42a9a8dda76734ff7a);
+        
+    
+        var popup_d094ec6f590558ac412073e2277c9a23 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5cd97a40746db7a5c62f696561bd717d = $(`<div id="html_5cd97a40746db7a5c62f696561bd717d" style="width: 100.0%; height: 100.0%;">                         <div style='font-size: 12px'>                             <b>덕산주유소</b><br>                             주소: 주소 없음<br>                             가격: 1649원                         </div>                     </div>`)[0];
+                popup_d094ec6f590558ac412073e2277c9a23.setContent(html_5cd97a40746db7a5c62f696561bd717d);
+            
+        
+
+        marker_e20ba7829ea17bde40c0d3a1e5f633ae.bindPopup(popup_d094ec6f590558ac412073e2277c9a23)
+        ;
+
+        
+    
+    
+            marker_e20ba7829ea17bde40c0d3a1e5f633ae.bindTooltip(
+                `<div>
+                     덕산주유소 (1649원)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5219b50304a78969aa7ab1754ece2d25 = L.marker(
+                [35.997615940545124, 128.59563695127486],
+                {}
+            ).addTo(map_6258fb5d1b569238d1ddbd4a248cb584);
+        
+    
+            var icon_0a011b792b8510b0dbf55c88312b7268 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5219b50304a78969aa7ab1754ece2d25.setIcon(icon_0a011b792b8510b0dbf55c88312b7268);
+        
+    
+        var popup_2f44eb5c3af33ef1833e540aed9b6e78 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b9dd2edbc54ffc88905b1f8cbeb44418 = $(`<div id="html_b9dd2edbc54ffc88905b1f8cbeb44418" style="width: 100.0%; height: 100.0%;">                         <div style='font-size: 12px'>                             <b>산들주유소</b><br>                             주소: 주소 없음<br>                             가격: 1699원                         </div>                     </div>`)[0];
+                popup_2f44eb5c3af33ef1833e540aed9b6e78.setContent(html_b9dd2edbc54ffc88905b1f8cbeb44418);
+            
+        
+
+        marker_5219b50304a78969aa7ab1754ece2d25.bindPopup(popup_2f44eb5c3af33ef1833e540aed9b6e78)
+        ;
+
+        
+    
+    
+            marker_5219b50304a78969aa7ab1754ece2d25.bindTooltip(
+                `<div>
+                     산들주유소 (1699원)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe708d31ec1d05b7403c2442d718626a = L.marker(
+                [35.999224296586284, 128.60543320804427],
+                {}
+            ).addTo(map_6258fb5d1b569238d1ddbd4a248cb584);
+        
+    
+            var icon_f0755ea74d1377008aa7cd80caad8120 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe708d31ec1d05b7403c2442d718626a.setIcon(icon_f0755ea74d1377008aa7cd80caad8120);
+        
+    
+        var popup_1154524357d367dc2d37c292ecddda4b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ecb9ef93c0378f41748bb7f9d8f34bb2 = $(`<div id="html_ecb9ef93c0378f41748bb7f9d8f34bb2" style="width: 100.0%; height: 100.0%;">                         <div style='font-size: 12px'>                             <b>오성주유소</b><br>                             주소: 주소 없음<br>                             가격: 1572원                         </div>                     </div>`)[0];
+                popup_1154524357d367dc2d37c292ecddda4b.setContent(html_ecb9ef93c0378f41748bb7f9d8f34bb2);
+            
+        
+
+        marker_fe708d31ec1d05b7403c2442d718626a.bindPopup(popup_1154524357d367dc2d37c292ecddda4b)
+        ;
+
+        
+    
+    
+            marker_fe708d31ec1d05b7403c2442d718626a.bindTooltip(
+                `<div>
+                     오성주유소 (1572원)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e767374979313205eb372f47c41317b8 = L.marker(
+                [35.99150368979021, 128.6163916345548],
+                {}
+            ).addTo(map_6258fb5d1b569238d1ddbd4a248cb584);
+        
+    
+            var icon_cff3c9b9600d8c04afd8dbc6e3f953a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e767374979313205eb372f47c41317b8.setIcon(icon_cff3c9b9600d8c04afd8dbc6e3f953a0);
+        
+    
+        var popup_46086c5c51304585feccd7103ffc1f4b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d6430ffcda0ec83927602911c21cb2ef = $(`<div id="html_d6430ffcda0ec83927602911c21cb2ef" style="width: 100.0%; height: 100.0%;">                         <div style='font-size: 12px'>                             <b>덕산주유소</b><br>                             주소: 주소 없음<br>                             가격: 1649원                         </div>                     </div>`)[0];
+                popup_46086c5c51304585feccd7103ffc1f4b.setContent(html_d6430ffcda0ec83927602911c21cb2ef);
+            
+        
+
+        marker_e767374979313205eb372f47c41317b8.bindPopup(popup_46086c5c51304585feccd7103ffc1f4b)
+        ;
+
+        
+    
+    
+            marker_e767374979313205eb372f47c41317b8.bindTooltip(
+                `<div>
+                     덕산주유소 (1649원)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34304343caa8c5d68c32d08b7dc1e830 = L.marker(
+                [35.997615940545124, 128.59563695127486],
+                {}
+            ).addTo(map_6258fb5d1b569238d1ddbd4a248cb584);
+        
+    
+            var icon_85f8ae467e40312e3fa8b7d6bc26a558 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34304343caa8c5d68c32d08b7dc1e830.setIcon(icon_85f8ae467e40312e3fa8b7d6bc26a558);
+        
+    
+        var popup_bc19800d9a5193a4cf85816aa301d1f2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_809f3fb3dc27cef47ff8843584b0c772 = $(`<div id="html_809f3fb3dc27cef47ff8843584b0c772" style="width: 100.0%; height: 100.0%;">                         <div style='font-size: 12px'>                             <b>산들주유소</b><br>                             주소: 주소 없음<br>                             가격: 1699원                         </div>                     </div>`)[0];
+                popup_bc19800d9a5193a4cf85816aa301d1f2.setContent(html_809f3fb3dc27cef47ff8843584b0c772);
+            
+        
+
+        marker_34304343caa8c5d68c32d08b7dc1e830.bindPopup(popup_bc19800d9a5193a4cf85816aa301d1f2)
+        ;
+
+        
+    
+    
+            marker_34304343caa8c5d68c32d08b7dc1e830.bindTooltip(
+                `<div>
+                     산들주유소 (1699원)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_6258fb5d1b569238d1ddbd4a248cb584.fitBounds(
+                [[35.97922429658628, 128.58543320804426], [36.01922429658629, 128.62543320804429]],
+                {}
+            );
+        
+</script>
+</html>
